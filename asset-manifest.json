@@ -1,0 +1,23 @@
+{
+  "files": {
+    "main.css": "/dainis-portfolio/static/css/main.9d5b29c0.chunk.css",
+    "main.js": "/dainis-portfolio/static/js/main.c0ad85d1.chunk.js",
+    "main.js.map": "/dainis-portfolio/static/js/main.c0ad85d1.chunk.js.map",
+    "runtime-main.js": "/dainis-portfolio/static/js/runtime-main.3a484b87.js",
+    "runtime-main.js.map": "/dainis-portfolio/static/js/runtime-main.3a484b87.js.map",
+    "static/js/2.8f1ba25a.chunk.js": "/dainis-portfolio/static/js/2.8f1ba25a.chunk.js",
+    "static/js/2.8f1ba25a.chunk.js.map": "/dainis-portfolio/static/js/2.8f1ba25a.chunk.js.map",
+    "static/js/3.df06e4de.chunk.js": "/dainis-portfolio/static/js/3.df06e4de.chunk.js",
+    "static/js/3.df06e4de.chunk.js.map": "/dainis-portfolio/static/js/3.df06e4de.chunk.js.map",
+    "index.html": "/dainis-portfolio/index.html",
+    "static/css/main.9d5b29c0.chunk.css.map": "/dainis-portfolio/static/css/main.9d5b29c0.chunk.css.map",
+    "static/js/2.8f1ba25a.chunk.js.LICENSE.txt": "/dainis-portfolio/static/js/2.8f1ba25a.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/dainis-portfolio/static/media/logo.6ce24c58.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.3a484b87.js",
+    "static/js/2.8f1ba25a.chunk.js",
+    "static/css/main.9d5b29c0.chunk.css",
+    "static/js/main.c0ad85d1.chunk.js"
+  ]
+}
