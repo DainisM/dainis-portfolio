@@ -1,0 +1,21 @@
+header {
+	display: flex;
+	justify-content: space-between;
+	background-color: darkcyan;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1;
+}
+
+header h3 {
+	color: white;
+	margin: 0;
+	padding: 1rem;
+}
+
+header h5 {
+	color: white;
+	margin: 0;
+	padding: 1rem;
+}
