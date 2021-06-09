@@ -48,7 +48,7 @@ const Language = ({ language, setLanguage, setLangStorage }) => {
 		setSelectedOption(value.value);
 		//Set language value
 		setLanguage(value.value);
-		//Set new cookie value for "language"
+		//Set new localStorage value for "language"
 		setLangStorage(value.value.toString());
 		setIsOpen(false);
 	};

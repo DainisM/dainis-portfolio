@@ -2,6 +2,7 @@ import React from "react";
 import { FormattedMessage, injectIntl } from "react-intl";
 
 import Language from "./Language";
+import Darkmode from "./Darkmode";
 
 import "../styles/Header.css";
 
@@ -15,6 +16,7 @@ const Header = ({ language, setLanguage, setLangStorage }) => {
 				</h5>
 			</span>
 			<span>
+				<Darkmode />
 				<Language
 					language={language}
 					setLanguage={setLanguage}
