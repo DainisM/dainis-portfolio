@@ -1,12 +1,19 @@
+import React from "react";
+import { Route, Switch, useLocation } from "react-router-dom";
+
+import Home from "./components/Home";
+import About from "./components/About";
+
 import "./styles/App.css";
 
 function App() {
+	const location = useLocation();
+
 	return (
-		<div className="App">
-			<header className="App-header">
-				<h2>Dainis portfolio web</h2>
-			</header>
-		</div>
+		<Switch location={location} key={location.key}>
+			<Route path="/" component={Home} exact />
+			<Route path="/about" component={About} />
+		</Switch>
 	);
 }
 
