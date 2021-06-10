@@ -4,6 +4,7 @@ import { Route, Switch, useLocation } from "react-router-dom";
 import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
+import Work from "./components/Work";
 
 import "./styles/App.css";
 
@@ -46,6 +47,7 @@ function App() {
 				<Switch location={location} key={location.key}>
 					<Route path="/" exact component={Home} />
 					<Route path="/about" component={About} />
+					<Route path="/work" component={Work} />
 				</Switch>
 			</>
 		</IntlProvider>
