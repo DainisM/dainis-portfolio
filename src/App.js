@@ -44,7 +44,7 @@ function App() {
 					setLangStorage={setLangStorage}
 				/>
 				<Switch location={location} key={location.key}>
-					<Route path="/" component={Home} exact />
+					<Route path="/" exact component={Home} />
 					<Route path="/about" component={About} />
 				</Switch>
 			</>
