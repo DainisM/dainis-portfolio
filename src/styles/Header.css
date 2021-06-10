@@ -19,3 +19,43 @@ header h5 {
 	margin: 0;
 	padding: 1rem;
 }
+
+header a {
+	color: white;
+}
+
+#linkSpan a {
+	display: block;
+	text-decoration: none;
+	padding: 1rem;
+	font-size: larger;
+}
+
+#linkSpanInline {
+	display: none;
+}
+
+@media only screen and (max-width: 991px) {
+	header h5 {
+		display: none;
+	}
+
+	#linkSpan {
+		display: none;
+	}
+
+	#linkSpanInline {
+		display: inline;
+	}
+
+	#linkSpanInline a {
+		text-decoration: none;
+		font-size: larger;
+		margin-left: 1rem;
+	}
+
+	.overviewMain {
+		width: 80%;
+		margin: 10% auto;
+	}
+}
