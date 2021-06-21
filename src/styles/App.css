@@ -1,11 +1,30 @@
+*,
+*::after,
+*::before {
+	box-sizing: border-box;
+}
+
 :root {
 	--blue: #0c0f13;
 	--white: rgb(236, 236, 236);
 }
 
+::selection {
+	background: #2ddab8;
+	color: white;
+}
+
+#root {
+	width: 100vw;
+	height: 100vh;
+	overflow: hidden;
+}
+
 body {
-	margin-top: 15rem;
-	font-family: "Ubuntu", sans-serif;
+	margin: 0;
+	margin-top: 8rem;
+	overflow: hidden;
+	font-family: "Sulphur Point", sans-serif;
 	background: var(--background-color);
 	color: var(--text-color);
 	font-weight: var(--font-weight);
