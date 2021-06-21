@@ -8,8 +8,8 @@ import { faChevronDown } from "@fortawesome/free-solid-svg-icons";
 
 import "../styles/Language.css";
 
-import flagUK from "../images/flag-uk.png";
-import flagDK from "../images/flag-dk.png";
+import flagUK from "../assets/images/flag-uk.png";
+import flagDK from "../assets/images/flag-dk.png";
 
 //Dropdown items used in dropdown
 const options = [

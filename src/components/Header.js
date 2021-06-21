@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+
 import { FormattedMessage, injectIntl } from "react-intl";
 
 import Language from "./Language";
@@ -10,11 +11,14 @@ import "../styles/Header.css";
 const Header = ({ language, setLanguage, setLangStorage }) => {
 	return (
 		<header className="row-fluid">
-			<span>
-				<h3>Dainis Moisejenko</h3>
+			<span id="homeLink">
+				<Link to="/">
+					<h3>Dainis Moisejenko</h3>
+				</Link>
 				<h5>
 					<FormattedMessage id="Header.subTitle" />
 				</h5>
+
 				<span id="linkSpanInline">
 					<Link to="/work">
 						<FormattedMessage id="Header.link1" />

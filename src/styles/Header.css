@@ -1,7 +1,7 @@
 header {
 	display: flex;
 	justify-content: space-between;
-	background-color: darkcyan;
+	background-color: rgb(23, 36, 48);
 	position: fixed;
 	top: 0;
 	width: 100%;
@@ -12,6 +12,11 @@ header h3 {
 	color: white;
 	margin: 0;
 	padding: 1rem;
+}
+
+#homeLink a:hover {
+	text-decoration: none;
+	color: darkcyan;
 }
 
 header h5 {
@@ -29,6 +34,11 @@ header a {
 	text-decoration: none;
 	padding: 1rem;
 	font-size: larger;
+}
+
+#linkSpan a:hover {
+	scale: 1.1;
+	color: darkcyan;
 }
 
 #linkSpanInline {
