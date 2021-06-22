@@ -33,6 +33,22 @@ img {
 	font-size: 4rem;
 }
 
+.homeDivMobile {
+	position: absolute;
+	width: 100%;
+	justify-content: center;
+	text-align: center;
+	top: 8rem;
+	padding: 1.5rem;
+	z-index: 0;
+}
+
+.homeDivMobile h1 {
+	font-family: "Minecraft Regular";
+	font-weight: bolder;
+	font-size: 2.5rem;
+}
+
 .mouseTip {
 	position: absolute;
 	width: 100%;
@@ -43,7 +59,7 @@ img {
 }
 
 #mouseIcon {
-	margin-left: 0.5rem;
+	margin-left: 0.8rem;
 	margin-top: 0.2rem;
 }
 

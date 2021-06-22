@@ -9,13 +9,22 @@ import {
 } from "@react-three/drei";
 import { useSpring, a } from "@react-spring/three";
 
+import { isMobile } from "react-device-detect";
+
+import { FormattedMessage, injectIntl } from "react-intl";
+
+import { motion } from "framer-motion";
+import { mouseVariants } from "./helpers/Variants";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMouse } from "@fortawesome/free-solid-svg-icons";
 
+//Components
 import Lights from "./Chest/lights";
 import Model from "./Chest/chest";
 import Floor from "./Chest/floor";
 
+//Icons
 import CsharpIcon from "../assets/images/CsharpIcon.png";
 import HtmlIcon from "../assets/images/HtmlIcon.png";
 import CssIcon from "../assets/images/CssIcon.png";
@@ -77,83 +86,151 @@ const Home = () => {
 
 	return (
 		<>
-			<Canvas
-				colorManagement
-				shadows
-				camera={{ position: [-5, 4, 4], fov: 75 }}
-			>
-				<Lights />
-				<Suspense fallback={null}>
-					<Model open={open} setOpen={setOpen} />
-					<Floor />
-					<OrbitControls
-						maxPolarAngle={Math.PI / 2}
-						minPolarAngle={0}
-						enablePan={false}
-					/>
-					<SkillMesh
-						position={[1, 2, 3]}
-						show={open}
-						args={[1, 1, 1]}
-						myTexture={CsharpIcon}
-					/>
+			{isMobile ? (
+				<>
+					<Canvas
+						colorManagement
+						shadows
+						camera={{ position: [-5, 0, 0], fov: 85 }}
+					>
+						<Suspense fallback={null}>
+							<SkillMesh
+								position={[0, 2, -1]}
+								show={true}
+								args={[1, 1, 1]}
+								myTexture={CsharpIcon}
+							/>
 
-					<SkillMesh
-						position={[-2, 1, -2]}
-						show={open}
-						args={[1, 1, 1]}
-						myTexture={HtmlIcon}
-					/>
+							<SkillMesh
+								position={[0, 0, 1]}
+								show={true}
+								args={[1, 1, 1]}
+								myTexture={HtmlIcon}
+							/>
 
-					<SkillMesh
-						position={[1, 2, -3]}
-						show={open}
-						args={[1, 1, 1]}
-						myTexture={CssIcon}
-					/>
+							<SkillMesh
+								position={[0, 0, -1]}
+								show={true}
+								args={[1, 1, 1]}
+								myTexture={CssIcon}
+							/>
 
-					<SkillMesh
-						position={[2, 0, -2]}
-						show={open}
-						args={[1, 1, 1]}
-						myTexture={JsIcon}
-					/>
+							<SkillMesh
+								position={[0, -2, -1]}
+								show={true}
+								args={[1, 1, 1]}
+								myTexture={JsIcon}
+							/>
 
-					<SkillMesh
-						position={[-1, 2, 2]}
-						show={open}
-						args={[1, 1, 1]}
-						myTexture={ReactJsIcon}
-					/>
+							<SkillMesh
+								position={[0, -2, 1]}
+								show={true}
+								args={[1, 1, 1]}
+								myTexture={ReactJsIcon}
+							/>
 
-					<SkillMesh
-						position={[3, 1, 2]}
-						show={open}
-						args={[1, 1, 1]}
-						myTexture={ReactNativeIcon}
-					/>
+							<SkillMesh
+								position={[0, 2, 1]}
+								show={true}
+								args={[1, 1, 1]}
+								myTexture={SQLIcon}
+							/>
+						</Suspense>
+					</Canvas>
+					<div className="homeDivMobile">
+						<h1 id="mobile_header">
+							<FormattedMessage id="HomePage.header" />
+						</h1>
+					</div>
+				</>
+			) : (
+				<>
+					<Canvas
+						colorManagement
+						shadows
+						camera={{ position: [-5, 4, 4], fov: 75 }}
+					>
+						<Lights />
+						<Suspense fallback={null}>
+							<Model open={open} setOpen={setOpen} />
+							<Floor />
+							<OrbitControls
+								maxPolarAngle={Math.PI / 2}
+								minPolarAngle={0}
+								enablePan={false}
+								enableZoom={false}
+							/>
+							<SkillMesh
+								position={[1, 2, 3]}
+								show={open}
+								args={[1, 1, 1]}
+								myTexture={CsharpIcon}
+							/>
 
-					<SkillMesh
-						position={[3, 2, 0]}
-						show={open}
-						args={[1, 1, 1]}
-						myTexture={SQLIcon}
-					/>
-				</Suspense>
-			</Canvas>
-			<Loader />
-			<div className="homeDiv">
-				<h1>My Skills</h1>
-			</div>
+							<SkillMesh
+								position={[-2, 1, -2]}
+								show={open}
+								args={[1, 1, 1]}
+								myTexture={HtmlIcon}
+							/>
 
-			<div className="container mouseTip">
-				<span className="row">
-					<p>* Use your mouse to play around in animation</p>
-					<FontAwesomeIcon id="mouseIcon" icon={faMouse} />
-				</span>
-			</div>
+							<SkillMesh
+								position={[1, 2, -3]}
+								show={open}
+								args={[1, 1, 1]}
+								myTexture={CssIcon}
+							/>
+
+							<SkillMesh
+								position={[2, 0, -2]}
+								show={open}
+								args={[1, 1, 1]}
+								myTexture={JsIcon}
+							/>
+
+							<SkillMesh
+								position={[-1, 2, 2]}
+								show={open}
+								args={[1, 1, 1]}
+								myTexture={ReactJsIcon}
+							/>
+
+							<SkillMesh
+								position={[3, 1, 2]}
+								show={open}
+								args={[1, 1, 1]}
+								myTexture={ReactNativeIcon}
+							/>
+
+							<SkillMesh
+								position={[3, 2, 0]}
+								show={open}
+								args={[1, 1, 1]}
+								myTexture={SQLIcon}
+							/>
+						</Suspense>
+					</Canvas>
+					<Loader />
+					<div className="homeDiv">
+						<h1>
+							<FormattedMessage id="HomePage.header" />
+						</h1>
+					</div>
+
+					<div className="container mouseTip">
+						<span className="row">
+							<p>
+								<FormattedMessage id="HomePage.txt1" />
+							</p>
+							<motion.span variants={mouseVariants} animate="animation">
+								<FontAwesomeIcon id="mouseIcon" icon={faMouse} />
+							</motion.span>
+						</span>
+					</div>
+				</>
+			)}
 		</>
 	);
 };
 
-export default Home;
+export default injectIntl(Home);
