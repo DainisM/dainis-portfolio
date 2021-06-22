@@ -24,3 +24,24 @@ export const languageVariants = {
 		},
 	},
 };
+
+// Variants (Animation) for mouse icon:
+// Bounce in half-circle
+export const mouseVariants = {
+	animation: {
+		x: [-10, 10],
+		y: [-10, 10],
+		transition: {
+			x: {
+				yoyo: Infinity,
+				duration: 0.5,
+			},
+			y: {
+				yoyo: Infinity,
+				duration: 0.25,
+				ease: "easeOut",
+			},
+			repeatType: "mirror",
+		},
+	},
+};
