@@ -25,13 +25,13 @@ import Model from "./Chest/chest";
 import Floor from "./Chest/floor";
 
 //Icons
-import CsharpIcon from "../assets/images/CsharpIcon.png";
-import HtmlIcon from "../assets/images/HtmlIcon.png";
-import CssIcon from "../assets/images/CssIcon.png";
-import JsIcon from "../assets/images/JsIcon.png";
-import ReactJsIcon from "../assets/images/ReactJsIcon.png";
-import ReactNativeIcon from "../assets/images/ReactNativeIcon.png";
-import SQLIcon from "../assets/images/SqlIcon.png";
+import CsharpIcon from "../assets/images/chestImages/CsharpIcon.png";
+import HtmlIcon from "../assets/images/chestImages/HtmlIcon.png";
+import CssIcon from "../assets/images/chestImages/CssIcon.png";
+import JsIcon from "../assets/images/chestImages/JsIcon.png";
+import ReactJsIcon from "../assets/images/chestImages/ReactJsIcon.png";
+import ReactNativeIcon from "../assets/images/chestImages/ReactNativeIcon.png";
+import SQLIcon from "../assets/images/chestImages/SqlIcon.png";
 
 import "../styles/Home.scss";
 
