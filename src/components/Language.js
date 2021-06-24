@@ -51,6 +51,8 @@ const Language = ({ language, setLanguage, setLangStorage }) => {
 		//Set new localStorage value for "language"
 		setLangStorage(value.value.toString());
 		setIsOpen(false);
+
+		window.location.reload();
 	};
 
 	return (

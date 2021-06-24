@@ -20,7 +20,7 @@ const Header = ({ language, setLanguage, setLangStorage }) => {
 				</h5>
 
 				<span id="linkSpanInline">
-					<Link to="/work">
+					<Link to="/portfolio">
 						<FormattedMessage id="Header.link1" />
 					</Link>
 					<Link to="/about">
@@ -29,7 +29,7 @@ const Header = ({ language, setLanguage, setLangStorage }) => {
 				</span>
 			</span>
 			<span id="linkSpan">
-				<Link to="/work">
+				<Link to="/portfolio">
 					<FormattedMessage id="Header.link1" />
 				</Link>
 				<Link to="/about">
