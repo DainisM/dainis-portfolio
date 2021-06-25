@@ -5,7 +5,6 @@ import Header from "./components/Header";
 import Home from "./components/Home";
 import About from "./components/About";
 import Portfolio from "./components/Portfolio";
-import Project from "./components/Project";
 
 import "./styles/App.css";
 
@@ -49,7 +48,6 @@ function App() {
 					<Route path="/" exact component={Home} />
 					<Route path="/about" component={About} />
 					<Route path="/portfolio" component={Portfolio} />
-					<Route path="/project/:projectID" component={Project} />
 				</Switch>
 			</>
 		</IntlProvider>

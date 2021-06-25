@@ -1,12 +1,10 @@
 import React, { Suspense, useEffect, useRef, useMemo } from "react";
 
 import { TextureLoader, LinearFilter } from "three";
-import { Canvas, useLoader, useFrame } from "@react-three/fiber";
+import { Canvas, useLoader } from "@react-three/fiber";
 import { Html } from "@react-three/drei";
 
-import lerp from "lerp";
-
-import { FormattedMessage, injectIntl } from "react-intl";
+import { injectIntl } from "react-intl";
 
 import { Text } from "./Portfolio/text";
 import Plane from "./Portfolio/plane";
@@ -15,25 +13,7 @@ import state from "./Portfolio/state";
 
 import "../styles/Work.css";
 
-function Startup() {
-	const ref = useRef();
-	useFrame(
-		() =>
-			(ref.current.material.opacity = lerp(
-				ref.current.material.opacity,
-				0,
-				0.025
-			))
-	);
-	return (
-		<Plane
-			ref={ref}
-			color="#0e0e0f"
-			position={[0, 0, 200]}
-			scale={[100, 100, 1]}
-		/>
-	);
-}
+//Paragraph hold inside all the elements for 1 section - header, image, txt, etc. and is adjustable by params
 function Paragraph({ image, index, offset, factor, header, aspect, text }) {
 	const { contentMaxWidth: w, canvasWidth, margin, mobile } = useBlock();
 	const size = aspect < 1 && !mobile ? 0.65 : 1;
@@ -56,14 +36,14 @@ function Paragraph({ image, index, offset, factor, header, aspect, text }) {
 				/>
 				<Html
 					style={{
-						width: pixelWidth / (mobile ? 1 : 2),
+						width: pixelWidth / (mobile ? 1 : 1.25),
 						textAlign: left ? "left" : "right",
 						fontSize: "1.1rem",
 					}}
 					position={[
-						left || mobile ? (-w * size) / 2 : 0,
-						(-w * size) / 2 / aspect - 1.4,
-						1,
+						left || mobile ? (-w * size) / 2.2 : -w / 3,
+						(-w * size) / 2 / aspect - 5,
+						100,
 					]}
 				>
 					<div>{text}</div>
@@ -101,6 +81,7 @@ function Paragraph({ image, index, offset, factor, header, aspect, text }) {
 	);
 }
 
+//Content loads first section (intro) + maps and adds all paragraphs (sections) to page under first
 function Content() {
 	const images = useLoader(
 		TextureLoader,
@@ -110,7 +91,7 @@ function Content() {
 		() => images.forEach((texture) => (texture.minFilter = LinearFilter)),
 		[images]
 	);
-	const { contentMaxWidth: w } = useBlock();
+	const { contentMaxWidth: w, mobile } = useBlock();
 	return (
 		<>
 			<Block factor={1} offset={0}>
@@ -118,20 +99,16 @@ function Content() {
 					<Text
 						left
 						size={w * 0.08}
-						position={[-w / 3.2, 0.5, -1]}
+						position={[-w / 2, 0.5, -1]}
 						color="darkcyan"
 					>
 						{state.header}
-						{/* My projects */}
-						{/* <FormattedMessage id="ScrollPage.header" /> */}
 					</Text>
 				</Block>
 				<Block factor={1.0}>
-					<Html position={[-w / 3.2, -w * 0.15 + 0.25, -1]} size={15}>
+					<Html position={[-w / 2, -w * 0.15 + 0.25, -1]} size={w * 0.15}>
 						<div style={{ width: w, fontSize: "1.3rem" }}>
 							{state.subheader}
-							{/* It was the year 2076. The substance had arrived. */}
-							{/* <FormattedMessage id="ScrollPage.subheader" /> */}
 						</div>
 					</Html>
 				</Block>
@@ -166,7 +143,6 @@ const Portfolio = () => {
 					fallback={<Html center className="loading" children="Loading..." />}
 				>
 					<Content />
-					<Startup />
 				</Suspense>
 			</Canvas>
 			<div className="scrollArea" ref={scrollArea} onScroll={onScroll}>
