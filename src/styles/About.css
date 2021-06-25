@@ -1,0 +1,33 @@
+.main {
+	width: 100%;
+	padding: 1rem 10%;
+	height: 100vh;
+	margin-bottom: 10rem;
+}
+
+.main p {
+	font-size: larger;
+	margin-bottom: 1rem;
+}
+
+.main h1 {
+	margin-top: 3rem;
+	margin-bottom: 3rem;
+}
+
+.main h3 {
+	text-align: center;
+}
+
+.hobbiesDiv {
+	margin-top: 5%;
+}
+
+.hobbiesDiv p {
+	margin-right: 1rem;
+}
+
+.firstRow {
+	margin-bottom: 3rem;
+	padding: 10% auto;
+}
