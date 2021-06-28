@@ -45,3 +45,69 @@ export const mouseVariants = {
 		},
 	},
 };
+
+export const gamepadVariants = {
+	animation: {
+		rotate: -45,
+		transition: {
+			duration: 1.5,
+			yoyo: Infinity,
+			repeatType: "reverse",
+		},
+	},
+};
+
+export const carVariants = {
+	animation: {
+		rotate: 10,
+		x: 20,
+		transition: {
+			x: {
+				yoyo: Infinity,
+				duration: 1.5,
+			},
+			duration: 1.5,
+			yoyo: Infinity,
+		},
+	},
+};
+
+export const travelVariants = {
+	animation: {
+		scale: 1.15,
+		transition: {
+			duration: 0.5,
+			yoyo: Infinity,
+		},
+	},
+};
+
+export const fishVariants = {
+	animation: {
+		rotate: -45,
+		x: 20,
+		transition: {
+			x: {
+				yoyo: Infinity,
+				duration: 1.5,
+			},
+			duration: 1.5,
+			yoyo: Infinity,
+		},
+	},
+};
+
+export const ballVariants = {
+	animation: {
+		rotate: 180,
+		y: 10,
+		transition: {
+			y: {
+				yoyo: Infinity,
+				duration: 1.5,
+			},
+			duration: 1.5,
+			yoyo: Infinity,
+		},
+	},
+};

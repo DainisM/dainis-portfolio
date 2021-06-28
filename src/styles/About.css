@@ -1,7 +1,6 @@
 .main {
 	width: 100%;
 	padding: 1rem 10%;
-	height: 100vh;
 	margin-bottom: 10rem;
 }
 
@@ -17,6 +16,8 @@
 
 .main h3 {
 	text-align: center;
+	color: darkcyan;
+	font-weight: bold;
 }
 
 .hobbiesDiv {
@@ -25,6 +26,34 @@
 
 .hobbiesDiv p {
 	margin-right: 1rem;
+	padding-left: 15px;
+}
+
+.hobbiesDiv span {
+	margin: 0;
+	padding: 0;
+	height: 100%;
+}
+
+.profSkillsDiv {
+	margin-top: 5%;
+}
+
+.profSkillsDiv li {
+	font-size: larger;
+}
+
+.otherSkillsDiv {
+	margin-top: 5%;
+}
+
+.contactDiv {
+	margin-top: 5%;
+}
+
+.contactDiv p {
+	margin-right: 1rem;
+	padding-left: 15px;
 }
 
 .firstRow {
