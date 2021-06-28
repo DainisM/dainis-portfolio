@@ -17,18 +17,27 @@ export default {
 				txt3: "I always had a huge interest in technology starting from the 90´s game consoles, as a kid, to computers and other forms of technology because I think technologies helps us in our daily lives, while we work or relax, and I think technology is our future.",
 			},
 			section2: {
+				header: "My professional skills",
+				subheader:
+					"My professional qualifications, the things I have learned and / or tried to work with, are:",
+				txt1: "HTML, CSS, JavaScript",
+				txt2: "C# and SQL",
+				txt3: "Tried a bit of Python and Java",
+				txt4: "Basics of ITIL Business cases and ITIL principles in documentation",
+				txt5: "Basics of DevOps, SCRUM and Agile principles",
+				txt6: "In the last span of time I worked mostly with ReactJS and React Native",
+			},
+			section3: {
+				header: "My personal qualifications",
+				txt: "I am always curious about new things and like to try them out, technology-wise and just in general with everything. Like I said I'm open to anything new and I think I'm pretty quick learner. I am punctual, can work well both in groups and independently and I always try to do my best. I would define myself as a hardworking and patient individual who helps others when possible.",
+			},
+			section4: {
 				header: "My hobbies",
 				txt1: "Sometimes in my spare time I play PC games",
 				txt2: "I like cars & motorcycles - motorsport, tuning and other shenanigans",
 				txt3: "I love to travel {car road trip included}",
 				txt4: "I like to relax while I am fishing",
 				txt5: "Basketball is also one of my hobbies",
-			},
-			section3: {
-				header: "My professional skills",
-			},
-			section4: {
-				header: "My personal qualifications",
 			},
 			section5: {
 				header: "Contact me",
@@ -55,6 +64,21 @@ export default {
 				txt3: "Jeg havde altid en enorm interesse for teknologi startende fra 90'ernes spilkonsoller, som barn, til computere og andre former for teknologi, fordi jeg tror, at teknologier hjælper os i vores daglige liv, mens vi arbejder eller slapper af, og jeg tror, teknologien er vores fremtid.",
 			},
 			section2: {
+				header: "Mine faglige kvalifikationer",
+				subheader:
+					"Min faglige kvalifikationer, de ting som jeg har lært og/eller prøvet at arbejde med, er:",
+				txt1: "HTML, CSS, JavaScript",
+				txt2: "C# og SQL",
+				txt3: "Har prøvet lidt af Python og Java",
+				txt4: "Grundlæggende om ITIL Business cases og ITIL – principper i dokumentation",
+				txt5: "Grundlæggende om DevOps, SCRUM og Agile principper",
+				txt6: "I de sidste stykke tid arbejdede jeg mest med ReactJS og React Native",
+			},
+			section3: {
+				header: "Mine personlige kvalifikationer",
+				txt: "Jeg er altid nysgerrig efter nye ting og kan godt lide at prøve dem, inden for teknologi og bare generelt med alt. Jeg er åbent for alt nyt og jeg mener at jeg er ret lærenem. Jeg er mødestabil, kan godt arbejde både i grupper og selvstændig og jeg prøver altid at gøre mit bedste. Jeg ville definere mig selv som en hårdtarbejdende og tålmodig person, der hjælper andre, når det er muligt. ",
+			},
+			section4: {
 				header: "Mine hobbyer",
 				txt1: "Nogle gange i min fritid spiller jeg pc-spil ",
 				txt2: "Jeg kan godt lide biler og motorcykler - motorsport, tuning og andre shenanigans ",
@@ -62,15 +86,9 @@ export default {
 				txt4: "Jeg kan godt lide at slappe af mens jeg fisker ",
 				txt5: "Basketball er også en af mine hobbyer ",
 			},
-			section3: {
-				header: "Mine faglige kvalifikationer",
-			},
-			section4: {
-				header: "Mine personlige kvalifikationer",
-			},
 			section5: {
 				header: "Kontakt mig",
-				txt1: "Du kan nå mig via e-mail : <b>moisejenko11@gmail.com</b>",
+				txt1: "Du kan nå mig via e-mail: <b> moisejenko11@gmail.com</b>",
 				txt2: "Eller du kan tjekke min github: ",
 			},
 		},

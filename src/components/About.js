@@ -6,6 +6,8 @@ import { Effects, Html } from "@react-three/drei";
 
 import { GlitchPass } from "three/examples/jsm/postprocessing/GlitchPass";
 
+import { isBrowser } from "react-device-detect";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
 	faBasketballBall,
@@ -15,13 +17,22 @@ import {
 	faHandSpock,
 	faRoute,
 } from "@fortawesome/free-solid-svg-icons";
+import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 import { FormattedMessage, injectIntl } from "react-intl";
+
+import { motion } from "framer-motion";
+import {
+	ballVariants,
+	travelVariants,
+	gamepadVariants,
+	fishVariants,
+	carVariants,
+} from "./helpers/Variants";
 
 import myImage from "../assets/images/myImage.jpg";
 
 import "../styles/About.css";
-import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 extend({ GlitchPass });
 
@@ -69,60 +80,100 @@ const About = () => {
 					</p>
 				</div>
 			</div>
-			<div className="hobbiesDiv">
+			<div className="profSkillsDiv">
 				<h3>
 					<FormattedMessage id="AboutPage.section2.header" />
 				</h3>
-				<div className="row">
-					<p>
+				<p>
+					<FormattedMessage id="AboutPage.section2.subheader" />
+				</p>
+				<ul>
+					<li>
 						<FormattedMessage id="AboutPage.section2.txt1" />
-					</p>
-					<span>
-						<FontAwesomeIcon icon={faGamepad} size={"2x"} />
-					</span>
-				</div>
-				<div className="row">
-					<p>
+					</li>
+					<li>
 						<FormattedMessage id="AboutPage.section2.txt2" />
-					</p>
-					<span>
-						<FontAwesomeIcon icon={faCar} size={"2x"} />
-					</span>
-				</div>
-				<div className="row">
-					<p>
+					</li>
+					<li>
 						<FormattedMessage id="AboutPage.section2.txt3" />
-					</p>
-					<span>
-						<FontAwesomeIcon icon={faRoute} size={"2x"} />
-					</span>
-				</div>
-				<div className="row">
-					<p>
+					</li>
+					<li>
 						<FormattedMessage id="AboutPage.section2.txt4" />
-					</p>
-					<span>
-						<FontAwesomeIcon icon={faFish} size={"2x"} />
-					</span>
-				</div>
-				<div className="row">
-					<p>
+					</li>
+					<li>
 						<FormattedMessage id="AboutPage.section2.txt5" />
-					</p>
-					<span>
-						<FontAwesomeIcon icon={faBasketballBall} size={"2x"} />
-					</span>
-				</div>
-			</div>
-			<div className="profSkillsDiv">
-				<h3>
-					<FormattedMessage id="AboutPage.section3.header" />
-				</h3>
+					</li>
+					<li>
+						<FormattedMessage id="AboutPage.section2.txt6" />
+					</li>
+				</ul>
 			</div>
 			<div className="otherSkillsDiv">
 				<h3>
+					<FormattedMessage id="AboutPage.section3.header" />
+				</h3>
+				<p>
+					<FormattedMessage id="AboutPage.section3.txt" />
+				</p>
+			</div>
+			<div className="hobbiesDiv">
+				<h3>
 					<FormattedMessage id="AboutPage.section4.header" />
 				</h3>
+				<div className="row">
+					<p>
+						<FormattedMessage id="AboutPage.section4.txt1" />
+					</p>
+					{isBrowser ? (
+						<motion.span variants={gamepadVariants} animate="animation">
+							<FontAwesomeIcon icon={faGamepad} color={"grey"} size={"2x"} />
+						</motion.span>
+					) : null}
+				</div>
+				<div className="row">
+					<p>
+						<FormattedMessage id="AboutPage.section4.txt2" />
+					</p>
+					{isBrowser ? (
+						<motion.span variants={carVariants} animate="animation">
+							<FontAwesomeIcon icon={faCar} color={"#00818c"} size={"2x"} />
+						</motion.span>
+					) : null}
+				</div>
+				<div className="row">
+					<p>
+						<FormattedMessage id="AboutPage.section4.txt3" />
+					</p>
+					{isBrowser ? (
+						<motion.span variants={travelVariants} animate="animation">
+							<FontAwesomeIcon icon={faRoute} color={"green"} size={"2x"} />
+						</motion.span>
+					) : null}
+				</div>
+				<div className="row">
+					<p>
+						<FormattedMessage id="AboutPage.section4.txt4" />
+					</p>
+					{isBrowser ? (
+						<motion.span variants={fishVariants} animate="animation">
+							<FontAwesomeIcon icon={faFish} color={"#0094e3"} size={"2x"} />
+						</motion.span>
+					) : null}
+				</div>
+				<div className="row">
+					<p>
+						<FormattedMessage id="AboutPage.section4.txt5" />
+					</p>
+					{isBrowser ? (
+						<motion.span variants={ballVariants} animate="animation">
+							<FontAwesomeIcon
+								icon={faBasketballBall}
+								color={"#fc6203"}
+								size={"2x"}
+							/>
+						</motion.span>
+					) : null}
+				</div>
 			</div>
 			<div className="contactDiv">
 				<h3>
@@ -135,7 +186,7 @@ const About = () => {
 							values={{
 								b: (...chunks) => (
 									<b>
-										<i>{chunks}</i>
+										&nbsp;<i>{chunks}</i>
 									</b>
 								),
 							}}
