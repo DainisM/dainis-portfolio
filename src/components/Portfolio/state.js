@@ -93,13 +93,13 @@ const state = {
 	pages: 6,
 	zoom: 1,
 	header:
-		locale === "en-US"
-			? intl.formatMessage(messages.en.header)
-			: intl.formatMessage(messages.dk.header),
+		locale === "da-DK"
+			? intl.formatMessage(messages.dk.header)
+			: intl.formatMessage(messages.en.header),
 	subheader:
-		locale === "en-US"
-			? intl.formatMessage(messages.en.subheader)
-			: intl.formatMessage(messages.dk.subheader),
+		locale === "da-DK"
+			? intl.formatMessage(messages.dk.subheader)
+			: intl.formatMessage(messages.en.subheader),
 	paragraphs: [
 		{
 			offset: 1,
@@ -108,18 +108,18 @@ const state = {
 			image: img1,
 			aspect: 1.51,
 			text:
-				locale === "en-US"
-					? intl.formatMessage(messages.en.first, {
-							link: (
-								<a href="https://github.com/P5-Tec/ReactV2" target="blank">
-									Code and more
-								</a>
-							),
-					  })
-					: intl.formatMessage(messages.dk.first, {
+				locale === "da-DK"
+					? intl.formatMessage(messages.dk.first, {
 							link: (
 								<a href="https://github.com/P5-Tec/ReactV2" target="blank">
 									Kode og mere
+								</a>
+							),
+					  })
+					: intl.formatMessage(messages.en.first, {
+							link: (
+								<a href="https://github.com/P5-Tec/ReactV2" target="blank">
+									Code and more
 								</a>
 							),
 					  }),
@@ -131,18 +131,18 @@ const state = {
 			image: img2,
 			aspect: 1.5,
 			text:
-				locale === "en-US"
-					? intl.formatMessage(messages.en.second, {
-							link: (
-								<a href="https://github.com/Fedtness/FitnessApp" target="blank">
-									Code and more
-								</a>
-							),
-					  })
-					: intl.formatMessage(messages.dk.second, {
+				locale === "da-DK"
+					? intl.formatMessage(messages.dk.second, {
 							link: (
 								<a href="https://github.com/Fedtness/FitnessApp" target="blank">
 									Kode og mere
+								</a>
+							),
+					  })
+					: intl.formatMessage(messages.en.second, {
+							link: (
+								<a href="https://github.com/Fedtness/FitnessApp" target="blank">
+									Code and more
 								</a>
 							),
 					  }),
@@ -154,24 +154,24 @@ const state = {
 			image: img3,
 			aspect: 1.5037,
 			text:
-				locale === "en-US"
-					? intl.formatMessage(messages.en.third, {
-							link: (
-								<a
-									href="https://github.com/DainisM/MusicMix-web-app"
-									target="blank"
-								>
-									Code and more
-								</a>
-							),
-					  })
-					: intl.formatMessage(messages.dk.third, {
+				locale === "da-DK"
+					? intl.formatMessage(messages.dk.third, {
 							link: (
 								<a
 									href="https://github.com/DainisM/MusicMix-web-app"
 									target="blank"
 								>
 									Kode og mere
+								</a>
+							),
+					  })
+					: intl.formatMessage(messages.en.third, {
+							link: (
+								<a
+									href="https://github.com/DainisM/MusicMix-web-app"
+									target="blank"
+								>
+									Code and more
 								</a>
 							),
 					  }),
@@ -183,24 +183,24 @@ const state = {
 			image: img4,
 			aspect: 1.665,
 			text:
-				locale === "en-US"
-					? intl.formatMessage(messages.en.fourth, {
-							link: (
-								<a
-									href="https://github.com/DainisM/MusicMix-Online"
-									target="blank"
-								>
-									Code and more
-								</a>
-							),
-					  })
-					: intl.formatMessage(messages.dk.fourth, {
+				locale === "da-DK"
+					? intl.formatMessage(messages.dk.fourth, {
 							link: (
 								<a
 									href="https://github.com/DainisM/MusicMix-Online"
 									target="blank"
 								>
 									Kode og mere
+								</a>
+							),
+					  })
+					: intl.formatMessage(messages.en.fourth, {
+							link: (
+								<a
+									href="https://github.com/DainisM/MusicMix-Online"
+									target="blank"
+								>
+									Code and more
 								</a>
 							),
 					  }),
@@ -212,24 +212,24 @@ const state = {
 			image: img5,
 			aspect: 1.55,
 			text:
-				locale === "en-US"
-					? intl.formatMessage(messages.en.fifth, {
-							link: (
-								<a
-									href="https://github.com/DainisM/WPF_Ticket_System"
-									target="blank"
-								>
-									Code and more
-								</a>
-							),
-					  })
-					: intl.formatMessage(messages.dk.fifth, {
+				locale === "da-DK"
+					? intl.formatMessage(messages.dk.fifth, {
 							link: (
 								<a
 									href="https://github.com/DainisM/WPF_Ticket_System"
 									target="blank"
 								>
 									Kode og mere
+								</a>
+							),
+					  })
+					: intl.formatMessage(messages.en.fifth, {
+							link: (
+								<a
+									href="https://github.com/DainisM/WPF_Ticket_System"
+									target="blank"
+								>
+									Code and more
 								</a>
 							),
 					  }),
