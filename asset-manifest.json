@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.aacb13d2.chunk.css",
-    "main.js": "/static/js/main.69b14b1b.chunk.js",
-    "main.js.map": "/static/js/main.69b14b1b.chunk.js.map",
+    "main.css": "/static/css/main.9e172834.chunk.css",
+    "main.js": "/static/js/main.f9ddb518.chunk.js",
+    "main.js.map": "/static/js/main.f9ddb518.chunk.js.map",
     "runtime-main.js": "/static/js/runtime-main.a2ddf461.js",
     "runtime-main.js.map": "/static/js/runtime-main.a2ddf461.js.map",
     "static/js/2.daf5ffd1.chunk.js": "/static/js/2.daf5ffd1.chunk.js",
     "static/js/2.daf5ffd1.chunk.js.map": "/static/js/2.daf5ffd1.chunk.js.map",
     "index.html": "/index.html",
-    "static/css/main.aacb13d2.chunk.css.map": "/static/css/main.aacb13d2.chunk.css.map",
+    "static/css/main.9e172834.chunk.css.map": "/static/css/main.9e172834.chunk.css.map",
     "static/js/2.daf5ffd1.chunk.js.LICENSE.txt": "/static/js/2.daf5ffd1.chunk.js.LICENSE.txt",
     "static/media/Home.scss": "/static/media/1_Minecraft-Regular.f30c069f.woff",
     "static/media/MOONGET_Heavy.d48c20fd.blob": "/static/media/MOONGET_Heavy.d48c20fd.blob",
@@ -28,7 +28,7 @@
   "entrypoints": [
     "static/js/runtime-main.a2ddf461.js",
     "static/js/2.daf5ffd1.chunk.js",
-    "static/css/main.aacb13d2.chunk.css",
-    "static/js/main.69b14b1b.chunk.js"
+    "static/css/main.9e172834.chunk.css",
+    "static/js/main.f9ddb518.chunk.js"
   ]
 }
