@@ -106,10 +106,10 @@ const About = () => {
 					<li>
 						<FormattedMessage id="AboutPage.section2.txt6" />
 					</li>
-<li>
+					<li>
 						<FormattedMessage id="AboutPage.section2.txt7" />
 					</li>
-<li>
+					<li>
 						<FormattedMessage id="AboutPage.section2.txt8" />
 					</li>
 				</ul>
