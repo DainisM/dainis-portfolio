@@ -13,7 +13,7 @@ export default {
 			welcome: " my name is Dainis",
 			section1: {
 				txt1: "I am a Data Technician specialising in programming student from Copenhagen, currently studying at TEC Ballerup.",
-				txt2: "I am 23 years old guy who loves to learn and write code and experiment with a lot of new exciting things.",
+				txt2: "I am 24 years old guy who loves to learn and write code and experiment with a lot of new exciting things.",
 				txt3: "I always had a huge interest in technology starting from the 90´s game consoles, as a kid, to computers and other forms of technology because I think technologies helps us in our daily lives, while we work or relax, and I think technology is our future.",
 			},
 			section2: {
