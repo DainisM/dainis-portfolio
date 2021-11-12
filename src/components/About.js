@@ -106,6 +106,12 @@ const About = () => {
 					<li>
 						<FormattedMessage id="AboutPage.section2.txt6" />
 					</li>
+<li>
+						<FormattedMessage id="AboutPage.section2.txt7" />
+					</li>
+<li>
+						<FormattedMessage id="AboutPage.section2.txt8" />
+					</li>
 				</ul>
 			</div>
 			<div className="otherSkillsDiv">
